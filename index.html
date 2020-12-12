@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- TODO: Put your HTML code in here -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <form action="/" class="d-flex mt-5" id="city-form">
+          <input type="text" id="city-input" class="form-control">
+          <input type="submit" value="Get the weather" class="btn btn-primary"></ins>
+        </form>
+        <div class="card mt-5 p-3">
+          <h1>Weather in <span id="city"></span></h1>
+            <h3 id="date"></h3>
+            <p id="description"></p>
+            <img src="" alt="" id="icon" height="50" width="50">
+            <h2 id="temperature"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
